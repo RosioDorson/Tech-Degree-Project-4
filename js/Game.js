@@ -19,7 +19,7 @@
         return this.phrases[randomPhrase];
     };
     startGame() {
-       document.getElementById('overlay').style.visibility = "hidden";
+       document.getElementById('overlay').style.display = 'none';
        this.activePhrase.addPhraseToDisplay();
     }
 

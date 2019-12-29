@@ -34,9 +34,18 @@
 
 //* test for step 7 *//
 
-const game = new Game();
-game.startGame();
-console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`);
+// const game = new Game();
+// game.startGame();
+// console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`);
+
+let game;
+const button = document.getElementById("btn__reset");
+console.log(button);
+
+button.addEventListener('click', function() {
+    game = new Game();
+    game.startGame();
+});
 
 
 
